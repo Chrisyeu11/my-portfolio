@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <nav className="p-4 bg-gray-800 text-white fixed w-full top-0">
       <div className="container mx-auto flex justify-between">
-      <h1 className="text-xl font-bold">Chris&apos; Portfolio</h1>
+        <h1 className="text-xl font-bold">Chris&apos; Portfolio</h1>
         <div className="space-x-4">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
@@ -16,4 +16,7 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
+
