@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import YouTube from "react-youtube";
 
 const MusicPlayer = () => {
@@ -11,10 +11,10 @@ const MusicPlayer = () => {
   const onReady = (event: any) => {
     playerRef.current = event.target;
     playerRef.current.setVolume(volume);
-    playerRef.current.playVideo();
+    playerRef.current.playVideo(); // Start playing automatically
   };
 
-  // Play / Pause Toggle
+  // Function to handle Play/Pause
   const togglePlay = () => {
     if (playing) {
       playerRef.current.pauseVideo();
@@ -33,6 +33,13 @@ const MusicPlayer = () => {
     }
   };
 
+  // Automatically play when component mounts
+  useEffect(() => {
+    if (playerRef.current) {
+      playerRef.current.playVideo();
+    }
+  }, []);
+
   return (
     <div className="fixed bottom-4 right-4 bg-gray-800 p-4 rounded-lg shadow-lg text-white flex items-center gap-4">
       {/* Hidden YouTube Player */}
@@ -45,6 +52,7 @@ const MusicPlayer = () => {
             autoplay: 1,
             loop: 1,
             start: 3146, // Start at 52m 26s
+            mute: 0, // Ensure sound is not muted
           },
         }}
         onReady={onReady}
