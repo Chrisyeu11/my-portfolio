@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import YouTube from "react-youtube";
 
 const MusicPlayer = () => {
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false); // Start as paused
   const [volume, setVolume] = useState(50);
   const playerRef = useRef<any>(null);
 
@@ -11,10 +11,9 @@ const MusicPlayer = () => {
   const onReady = (event: any) => {
     playerRef.current = event.target;
     playerRef.current.setVolume(volume);
-    playerRef.current.playVideo(); // Start playing automatically
   };
 
-  // Function to handle Play/Pause
+  // Play / Pause Toggle
   const togglePlay = () => {
     if (playing) {
       playerRef.current.pauseVideo();
@@ -33,11 +32,16 @@ const MusicPlayer = () => {
     }
   };
 
-  // Automatically play when component mounts
+  // Force Play on First User Interaction
   useEffect(() => {
-    if (playerRef.current) {
-      playerRef.current.playVideo();
-    }
+    const startMusic = () => {
+      if (playerRef.current && !playing) {
+        playerRef.current.playVideo();
+        setPlaying(true);
+      }
+    };
+    document.addEventListener("click", startMusic);
+    return () => document.removeEventListener("click", startMusic);
   }, []);
 
   return (
@@ -49,10 +53,10 @@ const MusicPlayer = () => {
           height: "0",
           width: "0",
           playerVars: {
-            autoplay: 1,
+            autoplay: 0, // Autoplay is blocked, we start manually
             loop: 1,
             start: 3146, // Start at 52m 26s
-            mute: 0, // Ensure sound is not muted
+            mute: 0, 
           },
         }}
         onReady={onReady}
