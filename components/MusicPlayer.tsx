@@ -37,19 +37,19 @@ const MusicPlayer = () => {
   };
 
   // Force Play on First User Interaction
-  useEffect(() => {
-    console.log("🔄 useEffect triggered!");
-    const startMusic = () => {
-      if (playerRef.current && !playing) {
-        playerRef.current.playVideo();
-        setPlaying(true);
-        console.log("▶ Auto-playing Music!");
-      }
-    };
-    document.addEventListener("click", startMusic);
-    return () => document.removeEventListener("click", startMusic);
-  }, [playing]); // ✅ Added `playing`
-  
+useEffect(() => {
+  console.log("🔄 useEffect triggered!");
+  const startMusic = () => {
+    if (playerRef.current && !playing) {
+      playerRef.current.playVideo();
+      setPlaying(true);
+      console.log("▶ Auto-playing Music!");
+    }
+  };
+  document.addEventListener("click", startMusic);
+  return () => document.removeEventListener("click", startMusic);
+}, [playing]); // ✅ Added `playing`
+
   return (
     <div className="fixed bottom-4 right-4 bg-gray-800 p-4 rounded-lg shadow-lg text-white flex items-center gap-4">
       {/* Debug: Show UI is rendered */}
