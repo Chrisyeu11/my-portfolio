@@ -48,8 +48,8 @@ const MusicPlayer = () => {
     };
     document.addEventListener("click", startMusic);
     return () => document.removeEventListener("click", startMusic);
-  }, []);
-
+  }, [playing]); // ✅ Added `playing`
+  
   return (
     <div className="fixed bottom-4 right-4 bg-gray-800 p-4 rounded-lg shadow-lg text-white flex items-center gap-4">
       {/* Debug: Show UI is rendered */}
