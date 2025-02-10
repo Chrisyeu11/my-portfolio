@@ -1,17 +1,17 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import YouTube from "react-youtube";
+import YouTube, { YouTubePlayer } from "react-youtube";
 
 const MusicPlayer = () => {
-  const [playing, setPlaying] = useState(false);
-  const [volume, setVolume] = useState(50);
-  const playerRef = useRef<any>(null);
+  const [playing, setPlaying] = useState<boolean>(false);
+  const [volume, setVolume] = useState<number>(50);
+  const playerRef = useRef<YouTubePlayer | null>(null);
 
   // Debug: Check if the component is mounting
   console.log("🎵 MusicPlayer component loaded!");
 
   // Function to handle player ready
-  const onReady = (event: any) => {
+  const onReady = (event: { target: YouTubePlayer }) => {
     playerRef.current = event.target;
     playerRef.current.setVolume(volume);
     console.log("🎥 YouTube Player is ready!");
@@ -19,6 +19,8 @@ const MusicPlayer = () => {
 
   // Play / Pause Toggle
   const togglePlay = () => {
+    if (!playerRef.current) return;
+
     if (playing) {
       playerRef.current.pauseVideo();
     } else {
@@ -28,36 +30,37 @@ const MusicPlayer = () => {
   };
 
   // Handle Volume Change
-  const handleVolumeChange = (event: any) => {
-    const newVolume = parseInt(event.target.value);
+  const handleVolumeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newVolume = parseInt(event.target.value, 10);
     setVolume(newVolume);
     if (playerRef.current) {
       playerRef.current.setVolume(newVolume);
     }
   };
 
-  // Force Play on First User Interaction
-useEffect(() => {
-  console.log("🔄 useEffect triggered!");
-  const startMusic = () => {
-    if (playerRef.current && !playing) {
-      playerRef.current.playVideo();
-      setPlaying(true);
-      console.log("▶ Auto-playing Music!");
-    }
-  };
-  document.addEventListener("click", startMusic);
-  return () => document.removeEventListener("click", startMusic);
-}, [playing]); // ✅ Added `playing`
+  // Auto-play on first user interaction
+  useEffect(() => {
+    console.log("🔄 useEffect triggered!");
+    
+    const startMusic = () => {
+      if (playerRef.current && !playing) {
+        playerRef.current.playVideo();
+        setPlaying(true);
+        console.log("▶ Auto-playing Music!");
+      }
+    };
+
+    document.addEventListener("click", startMusic);
+    return () => document.removeEventListener("click", startMusic);
+  }, [playing]); 
 
   return (
     <div className="fixed bottom-4 right-4 bg-gray-800 p-4 rounded-lg shadow-lg text-white flex items-center gap-4">
-      {/* Debug: Show UI is rendered */}
       <p>🎶 Now Playing</p>
 
       {/* Hidden YouTube Player */}
       <YouTube
-        videoId="4_yWMOPfSNo" // Your YouTube Video ID
+        videoId="4_yWMOPfSNo"
         opts={{
           height: "0",
           width: "0",
