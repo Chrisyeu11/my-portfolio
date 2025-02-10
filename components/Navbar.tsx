@@ -7,12 +7,9 @@ const Navbar = () => {
         <h1 className="text-xl font-bold">Chris&apos; Portfolio</h1>
         <div className="space-x-4">
           <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/portfolio">Portfolio</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/resume">Resume</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
+          </div>
       </div>
     </nav>
   );
