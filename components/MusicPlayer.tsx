@@ -7,17 +7,16 @@ const MusicPlayer = () => {
   const [volume, setVolume] = useState<number>(50);
   const playerRef = useRef<YouTubePlayer | null>(null);
 
-  // Debug: Check if the component is mounting
   console.log("🎵 MusicPlayer component loaded!");
 
-  // Function to handle player ready
+  // Handle YouTube Player Ready
   const onReady = (event: { target: YouTubePlayer }) => {
     playerRef.current = event.target;
     playerRef.current.setVolume(volume);
     console.log("🎥 YouTube Player is ready!");
   };
 
-  // Play / Pause Toggle
+  // Play/Pause Toggle
   const togglePlay = () => {
     if (!playerRef.current) return;
 
@@ -38,10 +37,10 @@ const MusicPlayer = () => {
     }
   };
 
-  // Auto-play on first user interaction
+  // Auto-play on First User Interaction
   useEffect(() => {
     console.log("🔄 useEffect triggered!");
-    
+
     const startMusic = () => {
       if (playerRef.current && !playing) {
         playerRef.current.playVideo();
@@ -50,13 +49,13 @@ const MusicPlayer = () => {
       }
     };
 
-    document.addEventListener("click", startMusic);
+    document.addEventListener("click", startMusic, { once: true }); // ✅ Runs only once on first click
     return () => document.removeEventListener("click", startMusic);
-  }, [playing]); 
+  }, []);
 
   return (
-    <div className="fixed bottom-4 right-4 bg-gray-800 p-4 rounded-lg shadow-lg text-white flex items-center gap-4">
-      <p>🎶 Now Playing</p>
+    <div className="fixed bottom-4 right-4 bg-gray-900 p-4 rounded-lg shadow-lg text-white flex items-center gap-4 border border-gray-600">
+      <p className="text-sm">🎶 Now Playing</p>
 
       {/* Hidden YouTube Player */}
       <YouTube
@@ -65,7 +64,7 @@ const MusicPlayer = () => {
           height: "0",
           width: "0",
           playerVars: {
-            autoplay: 0, // Autoplay blocked, will start manually
+            autoplay: 0,
             loop: 1,
             start: 3146,
             mute: 0,
@@ -77,9 +76,9 @@ const MusicPlayer = () => {
       {/* Play/Pause Button */}
       <button
         onClick={togglePlay}
-        className="bg-blue-500 px-3 py-2 rounded hover:bg-blue-600"
+        className="bg-blue-500 px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 transition"
       >
-        {playing ? "Pause ⏸" : "Play ▶"}
+        {playing ? "⏸ Pause" : "▶ Play"}
       </button>
 
       {/* Volume Control */}
