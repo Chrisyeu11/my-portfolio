@@ -45,7 +45,7 @@ export default function ExperiencePage() {
         "Streamlined operational workflows, increasing resident retention by 10% through data-driven solutions."
       ]
     }
-  ]; // ✅ Moved comment outside the array
+  ];
 
   return (
     <div className="container mx-auto p-8">
