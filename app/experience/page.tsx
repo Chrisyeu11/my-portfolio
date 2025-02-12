@@ -11,7 +11,7 @@ export default function ExperiencePage() {
     },
     {
       title: "Preload Operations Specialist | UPS",
-      location: "Houston, TX | 10.2024 - Current",
+      location: "Stafford, TX | 10.2024 - Current",
       details: [
         "Coordinated and optimized preload operations, ensuring timely and accurate package handling.",
         "Improved workflow efficiency by identifying bottlenecks and implementing corrective measures.",
@@ -38,7 +38,7 @@ export default function ExperiencePage() {
     },
     {
       title: "Resident Assistant | Asset Living",
-      location: "Houston, TX | 01.2024 - Current",
+      location: "Houston, TX | 01.2024 - 11.2024",
       details: [
         "Supported community operations, fostering a positive environment for residents during challenging times.",
         "Coordinated events to enhance engagement and addressed resident concerns with a focus on satisfaction.",
