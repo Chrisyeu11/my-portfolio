@@ -4,7 +4,10 @@ import YouTube, { YouTubePlayer } from "react-youtube";
 
 const MusicPlayer = () => {
   const [playing, setPlaying] = useState<boolean>(false);
-  const [volume, setVolume] = useState<number>(50);
+  const [volume, setVolume] = useState<number>(() => {
+    return typeof window !== "undefined" ? Number(localStorage.getItem("musicVolume")) || 50 : 50;
+  });
+
   const playerRef = useRef<YouTubePlayer | null>(null);
 
   console.log("🎵 MusicPlayer component loaded!");
@@ -28,16 +31,17 @@ const MusicPlayer = () => {
     setPlaying(!playing);
   };
 
-  // Handle Volume Change
+  // Handle Volume Change & Store in Local Storage
   const handleVolumeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newVolume = parseInt(event.target.value, 10);
     setVolume(newVolume);
+    localStorage.setItem("musicVolume", String(newVolume));
     if (playerRef.current) {
       playerRef.current.setVolume(newVolume);
     }
   };
 
-  // Auto-play on First User Interaction
+  // Auto-play on First User Interaction (Persistent)
   useEffect(() => {
     console.log("🔄 useEffect triggered!");
 
@@ -49,7 +53,7 @@ const MusicPlayer = () => {
       }
     };
 
-    document.addEventListener("click", startMusic, { once: true }); // ✅ Runs only once on first click
+    document.addEventListener("click", startMusic, { once: true });
     return () => document.removeEventListener("click", startMusic);
   }, []);
 
