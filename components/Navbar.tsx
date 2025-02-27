@@ -11,6 +11,7 @@ export default function Navbar() {
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-6">
         <Link href="/" className="hover:text-blue-400 transition duration-300">Home</Link>
+        <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
         <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
         <Link href="/experience" className="hover:text-blue-400 transition duration-300">Experience</Link>
       </div>

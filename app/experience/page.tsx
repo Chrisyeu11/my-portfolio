@@ -19,12 +19,13 @@ export default function ExperiencePage() {
       ]
     },
     {
-      title: "Houston Environmental Justice | Development Intern",
-      location: "Remote | 05.2024 - 08.2024",
+      title: "Product Management Intern | Houston Environmental Justice",
+      location: "Remote | 06.2024 - 08.2024",
       details: [
-        "Designed and implemented user-friendly dashboards, enabling stakeholders to interpret environmental data effectively.",
-        "Developed data analysis tools using Python and SQL to track environmental justice metrics.",
-        "Participated in agile development processes, contributing to sprint planning, backlog refinement, and retrospectives."
+        "Increased user engagement by 10% by defining and prioritizing a product roadmap.",
+        "Led cross-functional collaboration with engineers and designers, improving UI consistency by 20%.",
+        "Enhanced UX by 25% by conducting 10+ user interviews and iterating based on research insights.",
+        "Optimized user flows and navigation, reducing friction and decreasing drop-off rates by 15%."
       ]
     },
     {
