@@ -12,11 +12,11 @@ export default function AboutPage() {
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed animate-fade-in delay-200">
           I'm <strong>Chris</strong>, a results-driven software developer and data analyst with a strong foundation in 
-          full-stack development, data analytics, and system optimization. I don’t just build things for the sake of it—
+          full-stack development, data analytics, and system optimization. I don&apos;t just build things for the sake of it—
           I create <strong>efficient, scalable, and well-structured</strong> solutions that solve real problems.
           <br />
           <br />
-          Whether it’s <strong>improving UX by 25%</strong> through user research, optimizing data pipelines to reduce 
+          Whether it&apos;s <strong>improving UX by 25%</strong> through user research, optimizing data pipelines to reduce 
           processing errors by <strong>30%</strong>, or deploying high-performance web applications, I approach every project 
           with a critical eye and a focus on impact. I thrive in fast-paced environments and enjoy bridging the gap between 
           <strong>technical solutions</strong> and <strong>business goals</strong>.
