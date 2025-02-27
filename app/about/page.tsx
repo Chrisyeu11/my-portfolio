@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+
 
 export default function AboutPage() {
   return (
@@ -11,7 +11,7 @@ export default function AboutPage() {
           About Me
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed animate-fade-in delay-200">
-          I'm <strong>Chris</strong>, a results-driven software developer and data analyst with a strong foundation in 
+          I&apos;m <strong>Chris</strong>, a results-driven software developer and data analyst with a strong foundation in 
           full-stack development, data analytics, and system optimization. I don&apos;t just build things for the sake of it—
           I create <strong>efficient, scalable, and well-structured</strong> solutions that solve real problems.
           <br />
@@ -67,7 +67,7 @@ export default function AboutPage() {
 
       {/* Connect Section */}
       <div className="mt-12 text-center animate-fade-in delay-800">
-        <h2 className="text-3xl font-semibold text-blue-400">Let's Connect</h2>
+        <h2 className="text-3xl font-semibold text-blue-400">Let&apos;s Connect</h2>
         <p className="text-gray-400 mt-2">
           Reach out for collaborations, opportunities, or a tech chat!
         </p>
