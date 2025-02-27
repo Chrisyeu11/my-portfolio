@@ -63,14 +63,13 @@ const MusicPlayer = () => {
 
       {/* Hidden YouTube Player */}
       <YouTube
-        videoId="4_yWMOPfSNo"
+        videoId="3uA91IEexLc" // ✅ Updated Song Video ID
         opts={{
           height: "0",
           width: "0",
           playerVars: {
             autoplay: 0,
             loop: 1,
-            start: 3146,
             mute: 0,
           },
         }}
