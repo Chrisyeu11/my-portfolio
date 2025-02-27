@@ -44,7 +44,6 @@ const MusicPlayer = () => {
   // Auto-play on First User Interaction (Persistent)
   useEffect(() => {
     console.log("🔄 useEffect triggered!");
-
     const startMusic = () => {
       if (playerRef.current && !playing) {
         playerRef.current.playVideo();
@@ -52,7 +51,6 @@ const MusicPlayer = () => {
         console.log("▶ Auto-playing Music!");
       }
     };
-
     document.addEventListener("click", startMusic, { once: true });
     return () => document.removeEventListener("click", startMusic);
   }, []);
