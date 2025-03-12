@@ -18,7 +18,7 @@ export default function Projects() {
       {/* Hackathon Swap Project */}
       <section className="mb-8">
         <h2 className="text-2xl font-bold">Hackathon Swap Project</h2>
-        <p className="italic">Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+        <p className="italic">Python, Pandas, NumPy, PyArrow, Matplotlib, Seaborn</p>
         <ul className="list-disc pl-6 mt-2">
           <li>Processed **2GB+** of **Binance ETH/USDT** trade data with **Pandas** and **PyArrow** using an **ETL pipeline**.</li>
           <li>Improved **data consistency** by aligning swap prices with mid-market values using **NumPy**.</li>

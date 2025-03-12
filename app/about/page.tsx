@@ -11,13 +11,13 @@ export default function AboutPage() {
           About Me
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed animate-fade-in delay-200">
-          I&apos;m <strong>Chris</strong>, a results-driven software developer and data analyst with a strong foundation in 
-          full-stack development, data analytics, and system optimization. I don&apos;t just build things for the sake of it—
+          I&apos;m <strong>Chris</strong>, a results-driven software Engineer with a strong foundation in 
+          full-stack development, data analytics, and system optimization. I don&apos;t just build things for the sake of it. 
           I create <strong>efficient, scalable, and well-structured</strong> solutions that solve real problems.
           <br />
           <br />
-          Whether it&apos;s <strong>improving UX by 25%</strong> through user research, optimizing data pipelines to reduce 
-          processing errors by <strong>30%</strong>, or deploying high-performance web applications, I approach every project 
+          Whether it&apos;s <strong>improving UX by 25%</strong> through <strong>user research, optimizing data pipelines to reduce 
+          processing errors by 30%</strong>, or deploying high-performance web applications, I approach every project 
           with a critical eye and a focus on impact. I thrive in fast-paced environments and enjoy bridging the gap between 
           <strong>technical solutions</strong> and <strong>business goals</strong>.
         </p>
@@ -39,27 +39,29 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold text-center text-blue-400">What I Do</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-110 transition transform">
-            <h3 className="text-xl font-bold text-blue-300">Software Development</h3>
+            <h3 className="text-xl font-bold text-blue-300">Software Engineering</h3>
             <p className="text-gray-400 mt-2">
-              Specializing in <strong>Next.js, React, and TypeScript</strong>, I build clean, efficient, and scalable applications.
+            Don't just write code—design scalable systems, streamline workflows, and develop data-driven solutions.
+Gain hands-on experience with ETL pipelines, cloud computing, and automation.
+Go beyond software development and architect innovative solutions.
             </p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-110 transition transform">
-            <h3 className="text-xl font-bold text-blue-300">Data Science & Analytics</h3>
+            <h3 className="text-xl font-bold text-blue-300">Front End</h3>
             <p className="text-gray-400 mt-2">
-              Using <strong>Python, Pandas, and SQL</strong>, I extract insights from data to drive intelligent decision-making.
+            <strong>Next.js, React, and TypeScript.</strong>
             </p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-110 transition transform">
-            <h3 className="text-xl font-bold text-blue-300">Cybersecurity</h3>
+            <h3 className="text-xl font-bold text-blue-300">Back End</h3>
             <p className="text-gray-400 mt-2">
-              Experience in <strong>penetration testing</strong> and <strong>vulnerability assessment</strong> to ensure system security.
+              Java, Spring Ecosystem.
             </p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-110 transition transform">
-            <h3 className="text-xl font-bold text-blue-300">Finance & Investing</h3>
+            <h3 className="text-xl font-bold text-blue-300">Endure the Pain and Suffering</h3>
             <p className="text-gray-400 mt-2">
-              Actively investing in <strong>stocks, ETFs (VOO, QQQM), and personal finance</strong> for long-term financial growth.
+            Feel the pain and suffering, but keep pushing forward to Learn and Apply.
             </p>
           </div>
         </div>

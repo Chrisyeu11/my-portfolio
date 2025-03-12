@@ -1,14 +1,6 @@
 export default function ExperiencePage() {
   const experience = [
-    {
-      title: "Code Path Cybersecurity Program",
-      location: "Remote | 02.2025 - Current",
-      details: [
-        "Engaged in an intensive 12-week cybersecurity training program covering foundational and advanced security concepts.",
-        "Gained hands-on experience in penetration testing, network security, vulnerability assessment, and incident response through practical labs.",
-        "Developed proficiency in tools like Wireshark, Metasploit, and Nmap for both defensive and offensive cybersecurity techniques."
-      ]
-    },
+
     {
       title: "Preload Operations Specialist | UPS",
       location: "Stafford, TX | 10.2024 - Current",
