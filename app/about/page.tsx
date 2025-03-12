@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-110 transition transform">
             <h3 className="text-xl font-bold text-blue-300">Software Engineering</h3>
             <p className="text-gray-400 mt-2">
-            Don't just write code—design scalable systems, streamline workflows, and develop data-driven solutions.
+            Don&apos;t just write code—design scalable systems, streamline workflows, and develop data-driven solutions.
 Gain hands-on experience with ETL pipelines, cloud computing, and automation.
 Go beyond software development and architect innovative solutions.
             </p>
