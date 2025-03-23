@@ -2,8 +2,8 @@ export default function ExperiencePage() {
   const experience = [
 
     {
-      title: "Preload Operations Specialist | UPS",
-      location: "Stafford, TX | 10.2024 - Current",
+      title: "Childhood Cancer Society Hackathon",
+      location: "New York, NY | 1.2025 - 2.2025",
       details: [
         "Coordinated and optimized preload operations, ensuring timely and accurate package handling.",
         "Improved workflow efficiency by identifying bottlenecks and implementing corrective measures.",
@@ -20,25 +20,8 @@ export default function ExperiencePage() {
         "Optimized user flows and navigation, reducing friction and decreasing drop-off rates by 15%."
       ]
     },
-    {
-      title: "WiDS Datathon | Data Science Volunteer",
-      location: "Remote | 05.2024 - 08.2024",
-      details: [
-        "Analyzed healthcare inequities using climate pattern data to identify accessibility gaps.",
-        "Conducted data cleaning, visualization, and feature engineering using Python and Pandas, leading to actionable insights for stakeholder presentations.",
-        "Developed a predictive model utilizing scikit-learn to highlight demographic factors impacting healthcare access disparities."
-      ]
-    },
-    {
-      title: "Resident Assistant | Asset Living",
-      location: "Houston, TX | 01.2024 - 11.2024",
-      details: [
-        "Supported community operations, fostering a positive environment for residents during challenging times.",
-        "Coordinated events to enhance engagement and addressed resident concerns with a focus on satisfaction.",
-        "Streamlined operational workflows, increasing resident retention by 10% through data-driven solutions."
-      ]
-    }
-  ];
+   
+    ];
 
   return (
     <div className="container mx-auto p-8">
