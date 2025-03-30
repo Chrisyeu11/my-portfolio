@@ -1,18 +1,29 @@
 export default function ExperiencePage() {
   const experience = [
 
+    
     {
-      title: "Childhood Cancer Society Hackathon",
-      location: "New York, NY | 1.2025 - 2.2025",
+      title: "Preload | UPS",
+      location: "Stafford, TX. | 10.2023 - Current Position",
       details: [
-        "Coordinated and optimized preload operations, ensuring timely and accurate package handling.",
-        "Improved workflow efficiency by identifying bottlenecks and implementing corrective measures.",
-        "Communicated with cross-functional teams to address operational challenges and maintain service quality."
+        "Efficiently loaded and unloaded packages, ensuring timely and accurate processing.",
+        "Maintained a high standard of safety and organization while handling packages over 150 lbs.",
+        "Collaborated with team members to streamline workflow and meet daily operational goals."
       ]
     },
     {
-      title: "Product Management Intern | Houston Environmental Justice",
-      location: "Remote | 06.2024 - 08.2024",
+      title: "Software Engineer / Data Analyst | Childhood Cancer Society Hackathon",
+      location: "New York, NY. | 1.2025 - 02.2025",
+      details: [
+        "Built a crypto analytics tool to analyze and visualize ETH/USDT trade data, winning 1st place in a national social impact hackathon.",
+        "Developed an end-to-end ETL pipeline using Pandas and PyArrow to process and structure over 2GB+ of trade data.",
+        "Visualized trading trends and patterns using Matplotlib and Seaborn, enhancing data insights for informed decision-making."
+      ]
+    },
+   
+    {
+      title: "Frontend Develop Intern | Houston Environmental Justice",
+      location: "Houston, TX. | 06.2024 - 08.2024",
       details: [
         "Increased user engagement by 10% by defining and prioritizing a product roadmap.",
         "Led cross-functional collaboration with engineers and designers, improving UI consistency by 20%.",
