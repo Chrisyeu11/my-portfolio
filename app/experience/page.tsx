@@ -25,10 +25,9 @@ export default function ExperiencePage() {
       title: "Frontend Develop Intern | Houston Environmental Justice",
       location: "Houston, TX. | 06.2024 - 08.2024",
       details: [
-        "Increased user engagement by 10% by defining and prioritizing a product roadmap.",
-        "Led cross-functional collaboration with engineers and designers, improving UI consistency by 20%.",
-        "Enhanced UX by 25% by conducting 10+ user interviews and iterating based on research insights.",
-        "Optimized user flows and navigation, reducing friction and decreasing drop-off rates by 15%."
+        "Developed and styled responsive web pages using HTML, CSS, and JavaScript based on client requirements.",
+        "Collaborated with designers to translate wireframes and mockups into functional UI components.",
+        "Debugged and resolved front-end issues to ensure seamless user interactions and improved website functionality."
       ]
     },
    
