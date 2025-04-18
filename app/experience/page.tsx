@@ -6,9 +6,9 @@ export default function ExperiencePage() {
       title: "Preload | UPS",
       location: "Stafford, TX. | 10.2023 - Current Position",
       details: [
-        "Optimized loading workflows by organizing 900+ packages daily, enhancing route efficiency and reducing delivery delays.",
-        "Ensured shipment accuracy and data integrity using barcode scanning systems and internal logistics software.",
-        "Collaborated cross-functionally to resolve routing issues and trained new hires on safety standards and load optimization strategies."
+        "Optimized loading workflows by mapping 3D spatial arrangements to stack and position 900+ packages per shift efficiently, enhancing route efficiency and minimizing delivery delays.",
+        "Leveraged logistics systems and internal tools to enhance accuracy and maintain data integrity across outbound operations, including edge cases and exception workflows.",
+        "Coordinated with the management to resolve conflicts and onboard new hires, sharing techniques in load balancing scan compliance, and safety protocol adherence."  ~
       ]
     },
     {
