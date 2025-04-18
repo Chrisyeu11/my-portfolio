@@ -5,12 +5,12 @@ export default function Navbar() {
     <nav className="bg-gray-900 text-white p-4 flex justify-between items-center shadow-lg">
       {/* Logo / Site Name */}
       <h1 className="text-xl font-bold">
-        Chris&apos;s
+        
       </h1>
 
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-6">
-        <Link href="/" className="hover:text-blue-400 transition duration-300">Back to Home</Link>
+        <Link href="/" className="hover:text-blue-400 transition duration-300">Back to Main</Link>
       </div>
 
       {/* Mobile Menu Placeholder (Optional for Future) */}

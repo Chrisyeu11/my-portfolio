@@ -8,7 +8,7 @@ export default function ExperiencePage() {
       details: [
         "Optimized loading workflows by mapping 3D spatial arrangements to stack and position 900+ packages per shift efficiently, enhancing route efficiency and minimizing delivery delays.",
         "Leveraged logistics systems and internal tools to enhance accuracy and maintain data integrity across outbound operations, including edge cases and exception workflows.",
-        "Coordinated with the management to resolve conflicts and onboard new hires, sharing techniques in load balancing scan compliance, and safety protocol adherence."  ~
+        "Coordinated with the management to resolve conflicts and onboard new hires, sharing techniques in load balancing scan compliance, and safety protocol adherence." 
       ]
     },
     {
