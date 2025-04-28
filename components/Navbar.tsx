@@ -10,7 +10,7 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-6">
-        <Link href="/" className="hover:text-blue-400 transition duration-300">Back to Main</Link>
+        <Link href="/" className="hover:text-blue-400 transition duration-300">Main Menu</Link>
       </div>
 
       {/* Mobile Menu Placeholder (Optional for Future) */}
