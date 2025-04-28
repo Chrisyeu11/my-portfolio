@@ -31,6 +31,16 @@ export default function ExperiencePage() {
       ]
     },
    
+    {
+      title: "Data analytic research | College of Science, Engineering, and Technology (COSET) Summer Research",
+      location: "Houston, TX. | 06.2024 - 08.2024",
+      details: [
+        "Assisted in cleaning and preprocessing datasets using Pandas and NumPy.",
+        "Designed visualizations with Matplotlib and Seaborn.",
+        "Documented analysis methodologies and presented results"
+      ]
+    },
+   
     ];
 
   return (
