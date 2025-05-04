@@ -3,6 +3,17 @@ export default function Projects() {
     <div className="container mx-auto p-8 text-white">
       <h1 className="text-4xl font-bold mb-6">Projects</h1>
 
+{/* Stock Dashboard – Real-Time Market Tracker */}
+<section className="mb-8">
+  <h2 className="text-2xl font-bold">Stock Dashboard: Real-Time Market Tracker</h2>
+  <p className="italic">Next.js, TypeScript, Tailwind CSS, Chart.js, Finnhub API</p>
+  <ul className="list-disc pl-6 mt-2">
+    <li>Built a responsive dashboard with **Next.js** and **Tailwind CSS**, displaying live stock data via the **Finnhub API**.</li>
+    <li>Implemented search, sorting by percent change, and dynamic charting with **Chart.js** for interactive data visualization.</li>
+    <li>Handled loading states, error responses, and deployed the app to **Vercel** with secure **environment variable** configuration.</li>
+  </ul>
+</section>
+
 {/* VaultTrack – Personal Finance Dashboard */}
 <section className="mb-8">
   <h2 className="text-2xl font-bold">VaultTrack: Personal Finance Dashboard</h2>
