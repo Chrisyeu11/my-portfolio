@@ -1,15 +1,27 @@
 export default function ExperiencePage() {
   const experience = [
 
-    
     {
-      title: "Preload | UPS",
-      location: "Stafford, TX. | 10.2023 - Current Position",
+      title: "Test Engineer | Foxconn Industrial Internet",
+      location: "Houston, TX | 05.2025 – Present",
       details: [
-        "Optimized loading workflows by mapping 3D spatial arrangements to stack and position 900+ packages per shift efficiently, enhancing route efficiency and minimizing delivery delays.",
-        "Leveraged logistics systems and internal tools to enhance accuracy and maintain data integrity across outbound operations, including edge cases and exception workflows.",
-        "Coordinated with the management to resolve conflicts and onboard new hires, sharing techniques in load balancing scan compliance, and safety protocol adherence." 
-      ]
+  "Conducted comprehensive diagnostics on NVIDIA rack-mounted servers using Python and MobaXterm, detecting and resolving 20+ firmware anomalies, reducing downtime by 35%.",
+  "Evaluated server performance metrics, identifying critical firmware discrepancies that increased system stability by 40%.",
+  "Automated testing protocols for firmware updates, streamlining workflows and cutting testing time by 30%.",
+  "Partnered with engineering and QA teams to resolve 15+ hardware and firmware inconsistencies, enhancing product integrity and reducing error rates by 25%.",
+  "Compiled detailed diagnostic reports, logging 50+ system configurations and test outcomes to establish a robust knowledge base for future testing cycles."
+  ]
+    },
+
+    {
+      title: "Preload Manual Operation | UPS",
+      location: "Stafford, TX | 10.2023 – Present",
+      details: [
+  "Streamlined package handling workflows, strategically arranging 900+ packages per shift to reduce loading time by 20%.",
+  "Utilized logistics software to verify data accuracy, minimizing scanning errors by 15%.",
+  "Facilitated the onboarding of 10+ new hires, conducting operational training and implementing conflict resolution strategies to improve team cohesion."
+]
+
     },
     {
       title: "Software Engineer / Data Analyst | Childhood Cancer Society Hackathon",
